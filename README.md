@@ -1,4 +1,4 @@
-# Modern-Warfare-FastFile-Extractor
+# Modern Warfare FastFile Extractor
 A uility to extract raw FastFiles and patch them from compressed FastFiles.
 
 Currently only works with Modern Warfare 2022 FastFiles.
