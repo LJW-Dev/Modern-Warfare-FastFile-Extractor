@@ -8,10 +8,10 @@ namespace MW2_FF_Extractor
         static void checkRequiredFiles()
         {
             if (!File.Exists("dll\\oo2core_8_win64.dll"))
-                throw new Exception("oo2core_8_win64.dll not found!");
+                throw new Exception("dll\\oo2core_8_win64.dll not found!");
 
             if(!File.Exists("dll\\MWBDiff.dll"))
-                throw new Exception("MWBDiff.dll not found!");
+                throw new Exception("dll\\MWBDiff.dll not found!");
         }
 
         static void decompressFile(string filePath)
@@ -43,7 +43,10 @@ namespace MW2_FF_Extractor
             }
             else
             {
-                decompressFile(args[0]);
+                if(args[0].EndsWith(".ff"))
+                    decompressFile(args[0]);
+                else
+                    throw new Exception("File must end with .ff!");
             }
             
         }
