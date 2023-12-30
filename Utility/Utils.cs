@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace MW2_FF_Extractor
+namespace COD_FF_Extractor
 {
     public static class Utils
     {
@@ -48,6 +48,11 @@ namespace MW2_FF_Extractor
         public static bool IsDirectory(string path)
         {
             return (File.GetAttributes(path) & FileAttributes.Directory) == FileAttributes.Directory;
+        }
+
+        public static bool IsFileEmpty(string path)
+        {
+            return new FileInfo(path).Length == 0;
         }
     }
 }

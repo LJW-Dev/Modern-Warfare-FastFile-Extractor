@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MW2 FF Extractor": {
+      "commandName": "Project",
+      "commandLineArgs": "WZ \"E:\\Program Files\\Steam\\steamapps\\common\\Call of Duty HQ\""
+    }
+  }
+}
